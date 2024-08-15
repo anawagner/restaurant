@@ -1,0 +1,14 @@
+{
+    "menuItems": [
+      {
+        name: "first food item",
+        description: "This is a food item that has ingredients and tastes great. Highly recommended!",
+        price: "$4"
+      },
+      {
+        name: "second item",
+        description: "This is another delicious food item. Try it out and enjoy!",
+        price: "$9"
+      }
+    ]
+  }

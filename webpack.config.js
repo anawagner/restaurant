@@ -43,6 +43,10 @@ module.exports = {
           parse: json5.parse,
         },
       },
+      {
+        test: /\.hbs$/,
+        use: 'handlebars-loader'
+      }
     ]
   }
 };

@@ -1,10 +1,17 @@
+import menuItemTemplate from '../templates/menuItem.hbs';
+import data from '../data/menu.json5'
+
 const MenuComponent = () => {
-  const welcomeMessage = 'Menu';
-  const home = document.createElement('div');
-  const h1 = document.createElement('h1');
-  h1.textContent = welcomeMessage;
-  home.appendChild(h1);
-  return home;
-}
+  const body = document.createElement('div');
+  const heading = document.createElement('h1');
+  heading.textContent = 'Menu';
+  body.appendChild(heading);
+
+  const menuItems = document.createElement('div');
+  menuItems.innerHTML = menuItemTemplate(data);
+  body.appendChild(menuItems);
+
+  return body;
+};
 
 export default MenuComponent;

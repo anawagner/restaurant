@@ -1,6 +1,6 @@
 import './styles/main.css';
 import './styles/reset.css';
-import Header from './components/header';
+import { HeaderComponent, NavigationComponent } from './components/header';
 import HomeComponent from './components/home';
 import AboutComponent from './components/about';
 import MenuComponent from './components/menu';
@@ -18,18 +18,30 @@ function main(root, initialHash) {
   ];
 
   // create the page layout (header, content, footer)
-  root.appendChild(Header(" ..", navItems));
-  const contentElement = document.createElement('div');
-  contentElement.id = 'content';
+  const header = HeaderComponent('Restaurant');
+  const nav = NavigationComponent(navItems);
+  header.appendChild(nav);
+
+  root.appendChild(header);
+  const contentElement = document.createElement('main');
   root.appendChild(contentElement);
   contentElement.appendChild(navItems[0].component());
   root.appendChild(FooterComponent());
 
   // handle navigation
-  root.addEventListener('click', (e) => {
+  nav.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'A' && e.target.tagName !== 'LI') {
+      return;
+    } 
     const nav_id = e.target.id;
+  
     contentElement.innerHTML = '';
-    contentElement.appendChild(navItems[nav_id].component());
+    try {
+      contentElement.appendChild(navItems[nav_id].component());
+    } catch (error) {
+      contentElement.appendChild(HomeComponent());
+      console.log('click event listener error: ', error);
+    }
   });
   window.addEventListener('hashchange', () => {
     const hash = window.location.hash;
