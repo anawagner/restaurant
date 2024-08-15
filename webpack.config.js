@@ -1,8 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const json5 = require('json5');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.js',
   mode: 'development',
   output: {
     filename: 'bundle.js',
@@ -14,7 +15,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/assets/template.html',
+      template: './src/templates/main.html',
       favicon: './src/assets/icon.png'
     }),
   ],
