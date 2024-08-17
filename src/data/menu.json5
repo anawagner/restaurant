@@ -9,6 +9,11 @@
         name: "second item",
         description: "This is another delicious food item. Try it out and enjoy!",
         price: "$9"
+      },
+      {
+        name: "third item",
+        description: "this is the one you want",
+        price: "$11"
       }
     ]
   }

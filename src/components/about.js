@@ -1,14 +1,10 @@
+import text from '../data/text.json5';
+import page from '../templates/document.hbs';
+
 const AboutComponent = () => {
   const body = document.createElement('div');
-  const heading = document.createElement('h1');
-  heading.textContent = 'About Us';
-  body.appendChild(heading);
-
-  const paragraph = document.createElement('p');
-  paragraph.textContent = 'We are a restaurant that serves delicious food and drinks.'
-    + ' We are located in the heart of the city.';
-
-  body.appendChild(paragraph)
+  body.classList.add('about');
+  body.innerHTML = page(text.about);
   return body;
 }
 

@@ -1,0 +1,24 @@
+{
+  title: "Zen Tea",
+  home: {
+    heading: "Welcome to the tea shop",
+    paragraphs: [
+      { text: "hello this is a tea shop welcome"},
+      { text: "another one"}
+    ]
+  },
+  about: {
+    heading: "About Us",
+    paragraphs: [
+      { text: "this is our story, we went on a journey and found our passion" },
+      { text: "We are a restaurant that serves delicious food and drinks."},
+      { text: "We are located in the heart of the city."},
+    ]
+  },
+  contact: {
+    heading: "Contact Us",
+  },
+  reserve: {
+    heading: "Reserve a table"
+  }
+}

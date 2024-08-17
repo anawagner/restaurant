@@ -7,6 +7,7 @@ import MenuComponent from './components/menu';
 import ContactComponent from './components/contact';
 import ReserveComponent from './components/reserve';
 import FooterComponent from './components/footer';
+import text from './data/text.json5';
 
 function main(root, initialHash) {
   const navItems = [
@@ -18,7 +19,7 @@ function main(root, initialHash) {
   ];
 
   // create the page layout (header, content, footer)
-  const header = HeaderComponent('Restaurant');
+  const header = HeaderComponent(text.title);
   const nav = NavigationComponent(navItems);
   header.appendChild(nav);
 
@@ -60,7 +61,7 @@ const loadHashToContent = (navItems, hash, content) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.querySelector('#root');
+  const root = document.querySelector('body');
   const initialHash = window.location.hash;
   main(root, initialHash);
 });

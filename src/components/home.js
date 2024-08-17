@@ -1,9 +1,10 @@
+import text from '../data/text.json5';
+import page from '../templates/document.hbs';
+
 const HomeComponent = () => {
-  const welcomeMessage = 'Welcome to the Home Page';
   const home = document.createElement('div');
-  const h1 = document.createElement('h1');
-  h1.textContent = welcomeMessage;
-  home.appendChild(h1);
+  home.classList.add('home');
+  home.innerHTML = page(text.home);
   return home;
 }
 
