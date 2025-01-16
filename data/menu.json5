@@ -1,0 +1,28 @@
+{
+    "menuItems": [
+      {
+        name: "Green Tea Latte",
+        description: "Our signature green tea latte is made with premium matcha powder and your choice of milk. It's the perfect balance of sweet and earthy flavors.",
+        price: "$4",
+        image: "./images/green-tea-latte.jpg"
+      },
+      {
+        name: "Herbal Tea",
+        description: "Our herbal tea is a caffeine-free blend of organic herbs and flowers. It's a soothing and refreshing option for those looking for a caffeine-free alternative.",
+        price: "$3",
+        image: "./images/herbal-tea.jpg"
+      },
+      {
+        name: "Pastry",
+        description: "Our pastries are made fresh daily and are the perfect accompaniment to your tea. Choose from a selection of croissants, scones, and muffins.",
+        price: "$6",
+        image: "./images/pastry.jpg"
+      },
+      {
+        name: "Loose Leaf Tea",
+        description: "Choose from our selection of loose leaf teas, sourced from around the world. From delicate white teas to robust black teas, we have something for every tea lover.",
+        price: "$10",
+        image: "./images/loose-leaf-tea.jpg"
+      }
+    ]
+  }

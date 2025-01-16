@@ -1,5 +1,5 @@
-import './styles/main.css';
-import './styles/reset.css';
+import '../styles/main.css';
+import '../styles/reset.css';
 import { HeaderComponent, NavigationComponent } from './components/header';
 import HomeComponent from './components/home';
 import AboutComponent from './components/about';
@@ -7,7 +7,8 @@ import MenuComponent from './components/menu';
 import ContactComponent from './components/contact';
 import ReserveComponent from './components/reserve';
 import FooterComponent from './components/footer';
-import text from './data/text.json5';
+import text from '../data/text.json5';
+
 
 function main(root, initialHash) {
   const navItems = [

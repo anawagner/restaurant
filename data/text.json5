@@ -1,0 +1,28 @@
+{
+  title: "Zen Tea",
+  home: {
+    heading: "Welcome to the Zen Tea shop",
+    paragraphs: [
+      { text: "We are exited to offer you the best tea in town. We have a wide selection of teas and drinks that you can order hot or iced and enjoy in our seating area or take them on the go. " },
+      { text: "We also have a selection of pastries and snacks that you can enjoy with your drink. You may also purches our loose leaf teas, and tea service sets so you can enjoy making your own teas at home" },
+      { text: "We are open every day from 8am to 8pm." },
+    ]
+  },
+  about: {
+    heading: "About Us",
+    paragraphs: [
+      { text: "Welcome to Zen Tea, a sanctuary where the ancient art of tea and the timeless practice of Zen meditation come together in perfect harmony. Nestled in the heart of our bustling city, Zen Tea was founded in 2020 by a group of friends who shared a deep passion for both tea culture and the principles of Zen. Our mission is to provide a tranquil space where individuals can escape the chaos of daily life, find inner peace, and connect with themselves and others over a cup of meticulously crafted tea." },
+      { text: "At Zen Tea, we believe that the simple act of brewing and savoring tea can be a meditative experience. Our carefully curated selection of teas includes a variety of organic and ethically sourced leaves from around the world, each chosen for its unique flavor profile and health benefits. From the delicate notes of our white teas to the robust flavors of our black teas, every cup is an invitation to slow down, breathe deeply, and be present in the moment. Our knowledgeable staff is always on hand to guide you through our offerings and help you find the perfect tea to suit your mood and needs." },
+      { text: "In addition to our exquisite teas, Zen Tea offers a range of meditation classes and workshops designed to help you cultivate mindfulness and serenity. Whether you are a seasoned practitioner or new to meditation, our experienced instructors provide a welcoming and supportive environment for all. Join us for a guided meditation session, a tea ceremony, or one of our special events that blend the wisdom of Zen with the joy of tea. At Zen Tea, we are more than just a tea shop; we are a community dedicated to fostering peace, well-being, and a deeper connection to the present moment."},
+    ]
+  },
+  contact: {
+    heading: "Contact Us",
+  },
+  reserve: {
+    heading: "Reserve a table"
+  },
+  footer: {
+    text: "© 2025 Zen Tea"
+  }
+}
