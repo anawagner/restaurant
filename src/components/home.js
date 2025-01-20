@@ -1,5 +1,5 @@
-import text from '../../data/text.json5';
-import page from '../../templates/document.hbs';
+import text from '../data/text.json5';
+import page from '../templates/document.hbs';
 
 const HomeComponent = () => {
   const home = document.createElement('div');

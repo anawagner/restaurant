@@ -1,5 +1,6 @@
 const ContactComponent = () => {
   const body = document.createElement('div');
+  body.className = 'contact';
   const heading = document.createElement('h1');
   heading.textContent = 'Contact Us';
   body.appendChild(heading);
@@ -9,31 +10,35 @@ const ContactComponent = () => {
                        '<p>Phone: (123) 456-7890</p>' +
                        '<p>Email: contact@restaurant.com</p>';
   
-  // create a contact form using html
+
   const form = document.createElement('form');
+  const fields = [
+    { name: 'name', type: 'text', label: 'Name:' },
+    { name: 'email', type: 'email', label: 'Email:' },
+    { name: 'message', type: 'textarea', label: 'Message:' }
+  ];
 
-  const nameLabel = document.createElement('label');
-  nameLabel.textContent = 'Name:';
-  const nameInput = document.createElement('input');
-  nameInput.type = 'text';
-  nameInput.name = 'name';
-  nameLabel.appendChild(nameInput);
-  form.appendChild(nameLabel);
+  fields.forEach(field => {
+    const fieldDiv = document.createElement('div');
+    fieldDiv.className = 'field';
 
-  const emailLabel = document.createElement('label');
-  emailLabel.textContent = 'Email:';
-  const emailInput = document.createElement('input');
-  emailInput.type = 'email';
-  emailInput.name = 'email';
-  emailLabel.appendChild(emailInput);
-  form.appendChild(emailLabel);
+    const fieldLabel = document.createElement('label');
+    fieldLabel.textContent = field.label;
 
-  const messageLabel = document.createElement('label');
-  messageLabel.textContent = 'Message:';
-  const messageTextarea = document.createElement('textarea');
-  messageTextarea.name = 'message';
-  messageLabel.appendChild(messageTextarea);
-  form.appendChild(messageLabel);
+    let fieldInput;
+    if (field.type === 'textarea') {
+      fieldInput = document.createElement('textarea');
+    } else {
+      fieldInput = document.createElement('input');
+      fieldInput.type = field.type;
+    }
+    fieldInput.name = field.name;
+
+    // fieldLabel.appendChild(fieldInput);
+    fieldDiv.appendChild(fieldLabel);
+    fieldDiv.appendChild(fieldInput);
+    form.appendChild(fieldDiv);
+  });
 
   const submitButton = document.createElement('button');
   submitButton.type = 'submit';

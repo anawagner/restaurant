@@ -1,9 +1,9 @@
-import menuItemTemplate from '../../templates/menuItem.hbs';
-import data from '../../data/menu.json5'
-import '../../assets/images/green-tea-latte.jpg';
-import '../../assets/images/herbal-tea.jpg';
-import '../../assets/images/loose-leaf-tea.jpg';
-import '../../assets/images/pastry.jpg';
+import menuItemTemplate from '../templates/menuItem.hbs';
+import data from '../data/menu.json5'
+import '../menu/images/green-tea-latte.jpg';
+import '../menu/images/herbal-tea.jpg';
+import '../menu/images/loose-leaf-tea.jpg';
+import '../menu/images/pastry.jpg';
 
 const MenuComponent = () => {
   const body = document.createElement('div');

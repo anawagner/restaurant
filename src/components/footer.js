@@ -1,4 +1,4 @@
-import text from '../../data/text.json5';
+import text from '../data/text.json5';
 
 const FooterComponent = () => {
   const footer = document.createElement('footer');
