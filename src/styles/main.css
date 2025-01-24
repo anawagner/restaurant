@@ -29,7 +29,7 @@ body {
   color: var(--text-color-dark);
   display: flex;
   flex-direction: column;
-  background-image: url('../assets/images/bg.jpg');
+  background-image: url('../assets/images/annie-spratt-xTaOPMa6wAE-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,6 +69,15 @@ footer {
   background-color: var(--nav-color);
   color: var(--main-color);
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 main {
@@ -82,7 +91,7 @@ main {
 main>div {
   background-color: rgba(134,168,150,0.8);
   border-radius: 1rem;
-  padding: 2.5rem;
+  padding: 4rem;
   min-height: 50vh;
   max-width: 800px;
 }
@@ -138,7 +147,8 @@ footer>p {
   grid-template-columns: 170px 1fr;
   gap: 1rem;
   align-items: center;
-  background-color: rgba(134,168,150,0.8);
+  /* background-color: rgba(134,168,150,0.8); */
+  background-color: rgba(245, 245, 220, 0.8);
   border-radius: 0.5rem;
   padding: 1rem;
 }
@@ -226,4 +236,29 @@ button {
   gap: 1rem;
   width: 100%;
   max-width: 800px;
+}
+
+.credit-item {
+  font-size: x-small;
+  color: var(--text-color-light);
+}
+
+.credit-item > a {
+  color: var(--text-color-light);
+}
+
+.credit {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--main-color);
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
 }
