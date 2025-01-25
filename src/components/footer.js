@@ -7,6 +7,13 @@ const FooterComponent = () => {
   p.textContent = text.footer.text;
   footer.appendChild(p);
 
+  const homeLink = document.createElement('a');
+  homeLink.href = './';
+  homeLink.textContent = 'home';
+  const homeLinkContainer = document.createElement('p');
+  homeLinkContainer.appendChild(homeLink);
+  footer.appendChild(homeLinkContainer);
+
   const openLink = document.createElement('a');
   openLink.href = '#';
   openLink.textContent = 'photo credits';

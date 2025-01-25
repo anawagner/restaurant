@@ -1,18 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const json5 = require('json5');
-const Handlebars = require("handlebars");
 
 module.exports = {
   entry: './src/main.js',
-  mode: 'development',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
-  },
-  devtool: 'inline-source-map', // for dev only, use 'source-map' for production
-  devServer: {
-    static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
